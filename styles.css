@@ -489,8 +489,8 @@ dd {
 
 .social-directory {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
 }
 
 .social-card {
@@ -501,6 +501,7 @@ dd {
   display: flex;
   align-items: center;
   gap: 14px;
+  color: var(--ink);
   transition: transform 180ms ease, border-color 180ms ease;
 }
 
