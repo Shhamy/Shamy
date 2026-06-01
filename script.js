@@ -1,1 +1,5 @@
-// Reserved for future site interactions.
+window.addEventListener("load", () => {
+  if (window.instgrm) {
+    window.instgrm.Embeds.process();
+  }
+});
