@@ -1,4 +1,6 @@
 window.addEventListener("load", () => {
+  document.body.classList.add("page-enter");
+
   if (window.instgrm) {
     window.instgrm.Embeds.process();
   }
@@ -94,5 +96,29 @@ document.querySelectorAll('a[href^="#"], a[href*=".html#"]').forEach((link) => {
       void target.offsetWidth;
       target.classList.add("section-flash");
     }, 450);
+  });
+});
+
+document.querySelectorAll("a[href]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const href = link.getAttribute("href");
+
+    if (
+      !href ||
+      href.startsWith("#") ||
+      href.startsWith("mailto:") ||
+      href.startsWith("http") ||
+      link.target === "_blank"
+    ) {
+      return;
+    }
+
+    event.preventDefault();
+    document.body.classList.remove("page-enter");
+    document.body.classList.add("page-exit");
+
+    window.setTimeout(() => {
+      window.location.href = href;
+    }, 230);
   });
 });
