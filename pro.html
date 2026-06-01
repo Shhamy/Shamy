@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pro | Shamy</title>
+    <meta
+      name="description"
+      content="Demandes professionnelles pour Shamy : humour, animation, voix, vidéo et collaborations."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Retour à l'accueil">Shamy</a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html#spectacles">Spectacles</a>
+        <a href="index.html#bio">Bio</a>
+        <a href="pro.html">Pro</a>
+        <a href="index.html#medias">Médias</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="https://lepointdevente.com/billets/broufissionnel?lang=fr">Billets</a>
+    </header>
+
+    <main>
+      <section class="pro-hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Espace pro</p>
+          <h1>Humour, animation et projets sur mesure.</h1>
+          <p class="hero-text">
+            Pour un événement, une soirée, une vidéo, une voix ou une collaboration, l'idée est simple :
+            comprendre le contexte, garder le ton juste et amener une présence drôle, claire et vivante.
+          </p>
+          <div class="hero-actions" aria-label="Actions professionnelles">
+            <a class="button button-primary" href="#booking-pro">Faire une demande</a>
+            <a class="button button-secondary" href="index.html">Retour au site</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-pro pro-page-section">
+        <div class="pro-grid">
+          <article>
+            <p class="tag">Événements</p>
+            <h3>Humour en salle</h3>
+            <p>
+              Un set adaptable, pensé selon le contexte, le public et l'ambiance de la soirée.
+            </p>
+          </article>
+          <article>
+            <p class="tag">Animation</p>
+            <h3>Soirées et projets</h3>
+            <p>
+              Une présence à l'aise au micro pour présenter, improviser et garder le rythme.
+            </p>
+          </article>
+          <article>
+            <p class="tag">Voix / caméra</p>
+            <h3>Personnages et collaborations</h3>
+            <p>
+              Disponible pour des projets vidéo, voix, concepts web ou idées qui demandent du jeu.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="booking-pro" class="section section-contact">
+        <div>
+          <p class="eyebrow">Demande pro</p>
+          <h2>Décris ton projet, je te réponds directement.</h2>
+        </div>
+        <div class="contact-panel">
+          <form
+            class="booking-form"
+            id="booking-form"
+            action="https://api.web3forms.com/submit"
+            method="post"
+          >
+            <input type="hidden" name="access_key" value="dfb72ff6-ff1e-41c3-a7f5-b4ad7f6306fc">
+            <input type="hidden" name="subject" value="Nouvelle demande pro - Shamy">
+            <input type="hidden" name="from_name" value="Page pro de Shamy">
+            <input type="hidden" name="redirect" value="https://shhamy.github.io/Shamy---Site/merci.html">
+            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
+            <div class="form-row">
+              <label for="booking-name">Nom et prénom</label>
+              <input id="booking-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="booking-email">Courriel</label>
+              <input id="booking-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row">
+              <label for="booking-message">Message</label>
+              <textarea id="booking-message" name="message" rows="6" required></textarea>
+            </div>
+            <button class="button button-primary" type="submit">Envoyer la demande</button>
+          </form>
+          <p class="contact-email">Ou directement : <a href="mailto:Shamynpro@gmail.com">Shamynpro@gmail.com</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Shamy - Nassim Tiaibia</p>
+      <p>Humour, musique et projets vivants.</p>
+    </footer>
+  </body>
+</html>
