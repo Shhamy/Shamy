@@ -23,7 +23,7 @@
         <a href="#spectacles">Spectacles</a>
         <a href="#bio">Bio</a>
         <a href="pro.html">Pro</a>
-        <a href="#medias">Médias</a>
+        <a href="medias.html">Médias</a>
         <a href="#contact">Contact</a>
       </nav>
       <a class="header-cta" href="https://lepointdevente.com/billets/broufissionnel?lang=fr">Billets</a>
@@ -177,40 +177,34 @@
             <p>L'album de Shamy N, pour le côté musique de l'univers.</p>
           </a>
         </div>
+        <a class="button button-primary media-page-link" href="medias.html">Voir tous les liens</a>
       </section>
 
       <section id="contact" class="section section-contact">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Pour un booking, une collaboration ou une idée à développer.</h2>
+          <p class="eyebrow">Infolettre</p>
+          <h2>Pour recevoir les prochaines dates, sorties et nouvelles.</h2>
         </div>
         <div class="contact-panel">
           <form
-            class="booking-form"
-            id="booking-form"
+            class="newsletter-form"
+            id="newsletter-form"
             action="https://api.web3forms.com/submit"
             method="post"
           >
             <input type="hidden" name="access_key" value="dfb72ff6-ff1e-41c3-a7f5-b4ad7f6306fc">
-            <input type="hidden" name="subject" value="Nouvelle demande de booking - Shamy">
-            <input type="hidden" name="from_name" value="Site web de Shamy">
+            <input type="hidden" name="subject" value="Nouvelle inscription infolettre - Shamy">
+            <input type="hidden" name="from_name" value="Infolettre Shamy">
             <input type="hidden" name="redirect" value="https://shhamy.github.io/Shamy---Site/merci.html">
             <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
             <div class="form-row">
-              <label for="booking-name">Nom et prénom</label>
-              <input id="booking-name" name="name" type="text" autocomplete="name" required>
+              <label for="newsletter-email">Courriel</label>
+              <input id="newsletter-email" name="email" type="email" autocomplete="email" required>
             </div>
-            <div class="form-row">
-              <label for="booking-email">Courriel</label>
-              <input id="booking-email" name="email" type="email" autocomplete="email" required>
-            </div>
-            <div class="form-row">
-              <label for="booking-message">Message</label>
-              <textarea id="booking-message" name="message" rows="5" required></textarea>
-            </div>
-            <button class="button button-primary" type="submit">Envoyer la demande</button>
+            <input type="hidden" name="message" value="Nouvelle inscription à l'infolettre de Shamy.">
+            <button class="button button-primary" type="submit">S'inscrire</button>
           </form>
-          <p class="contact-email">Ou directement : <a href="mailto:Shamynpro@gmail.com">Shamynpro@gmail.com</a></p>
+          <p class="contact-email">Pour les demandes professionnelles : <a href="pro.html">espace pro</a></p>
           <div class="social-links" aria-label="Liens sociaux">
             <a href="https://www.instagram.com/shamynt_/">Instagram</a>
             <a href="https://www.youtube.com/@shamytv1228">YouTube</a>

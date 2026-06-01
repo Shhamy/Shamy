@@ -117,6 +117,15 @@ h3 {
     var(--night);
 }
 
+.media-hero {
+  display: grid;
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(240, 106, 34, 0.23), transparent 34%),
+    linear-gradient(215deg, rgba(197, 35, 24, 0.2), transparent 42%),
+    var(--night);
+}
+
 .hero-copy {
   max-width: 690px;
 }
@@ -469,6 +478,64 @@ dd {
   color: var(--muted);
 }
 
+.media-page-link {
+  margin-top: 24px;
+}
+
+.section-links {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.social-directory {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.social-card {
+  min-height: 220px;
+  padding: 22px;
+  border: 1px solid rgba(12, 13, 16, 0.14);
+  background: #fffaf0;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(197, 35, 24, 0.5);
+}
+
+.social-card span {
+  display: block;
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.social-card strong {
+  display: block;
+  margin-top: 12px;
+  font-family: "Archivo", Impact, sans-serif;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.social-card p {
+  color: #3f444a;
+}
+
+.primary-social {
+  background: var(--night);
+  color: var(--paper);
+}
+
+.primary-social p {
+  color: var(--muted);
+}
+
 .video-frame {
   position: relative;
   width: 100%;
@@ -524,7 +591,8 @@ dd {
   color: var(--paper);
 }
 
-.booking-form {
+.booking-form,
+.newsletter-form {
   display: grid;
   gap: 14px;
 }
@@ -683,7 +751,8 @@ dd {
   }
 
   .secondary-events.single-event,
-  .pro-grid {
+  .pro-grid,
+  .social-directory {
     grid-template-columns: 1fr;
   }
 
