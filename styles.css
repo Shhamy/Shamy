@@ -110,11 +110,17 @@ h3 {
 
 .pro-hero {
   display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(340px, 1.08fr);
+  gap: clamp(28px, 5vw, 70px);
   align-items: center;
   background:
     linear-gradient(135deg, rgba(197, 35, 24, 0.22), transparent 34%),
     linear-gradient(215deg, rgba(18, 52, 90, 0.64), transparent 46%),
     var(--night);
+}
+
+.pro-hero-media img {
+  object-position: center center;
 }
 
 .media-hero {
@@ -736,6 +742,7 @@ dd {
   }
 
   .hero,
+  .pro-hero,
   .event-feature,
   .section-bio,
   .section-contact,
