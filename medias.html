@@ -8,13 +8,28 @@
       name="description"
       content="Liens médias de Shamy : Instagram, YouTube, TikTok, Twitch, Spotify et extraits."
     >
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shamy">
+    <meta property="og:title" content="Médias | Shamy">
+    <meta
+      property="og:description"
+      content="Instagram, YouTube, TikTok, Twitch, Spotify et contenus de Shamy."
+    >
+    <meta property="og:image" content="https://shhamy.github.io/Shamy---Site/assets/shamy-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Médias | Shamy">
+    <meta
+      name="twitter:description"
+      content="Instagram, YouTube, TikTok, Twitch, Spotify et contenus de Shamy."
+    >
+    <meta name="twitter:image" content="https://shhamy.github.io/Shamy---Site/assets/shamy-og.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
-    <link rel="icon" type="image/png" href="assets/shamy-icon.png">
+    <link rel="icon" type="image/png" href="assets/shamy-favicon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -40,79 +55,65 @@
             Extraits de stand-up, musique, vidéos, lives et projets en cours. Le meilleur point de départ
             reste Instagram, mais tout est rassemblé ici.
           </p>
+          <div class="hero-actions" aria-label="Actions médias">
+            <a class="button button-primary" href="https://www.instagram.com/shamynt_/">Instagram</a>
+            <a class="button button-secondary" href="https://www.youtube.com/@shamytv1228">YouTube</a>
+          </div>
+        </div>
+        <div class="hero-media media-hero-photo" aria-label="Photo de Shamy">
+          <img src="assets/shamy-press-photo.jpg" alt="Shamy en train d'écrire">
         </div>
       </section>
 
       <section class="section section-links">
+        <div class="section-heading">
+          <p class="eyebrow">Liens directs</p>
+          <h2>Choisis le réseau.</h2>
+        </div>
         <div class="social-directory">
           <a class="social-card primary-social" href="https://www.instagram.com/shamynt_/" aria-label="Instagram de Shamy">
-            <span class="social-icon">IG</span>
+            <span class="social-icon social-icon-instagram" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm8.7 2.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/>
+              </svg>
+            </span>
             <strong>Instagram</strong>
           </a>
           <a class="social-card" href="https://www.youtube.com/@shamytv1228" aria-label="YouTube de Shamy">
-            <span class="social-icon">YT</span>
+            <span class="social-icon social-icon-youtube" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M21.6 7.2s-.2-1.5-.8-2.2c-.8-.8-1.7-.8-2.1-.9C15.8 3.9 12 3.9 12 3.9s-3.8 0-6.7.2c-.4.1-1.3.1-2.1.9-.6.7-.8 2.2-.8 2.2S2.2 9 2.2 10.8v1.7c0 1.8.2 3.6.2 3.6s.2 1.5.8 2.2c.8.8 1.9.8 2.4.9 1.7.2 6.4.2 6.4.2s3.8 0 6.7-.2c.4-.1 1.3-.1 2.1-.9.6-.7.8-2.2.8-2.2s.2-1.8.2-3.6v-1.7c0-1.8-.2-3.6-.2-3.6ZM10 14.9V8.7l5.7 3.1L10 14.9Z"/>
+              </svg>
+            </span>
             <strong>YouTube</strong>
           </a>
           <a class="social-card" href="https://www.tiktok.com/@shamynt_" aria-label="TikTok de Shamy">
-            <span class="social-icon">TT</span>
+            <span class="social-icon social-icon-tiktok" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M15.6 3c.4 2.3 1.8 3.9 4.4 4.3v3c-1.6 0-3.1-.5-4.4-1.4v6.2c0 3.2-2.6 5.9-5.9 5.9s-5.9-2.6-5.9-5.8 2.6-5.9 5.9-5.9c.5 0 1 .1 1.5.2v3.2c-.5-.2-1-.3-1.5-.3-1.6 0-2.8 1.3-2.8 2.8S8.1 18 9.7 18s2.8-1.3 2.8-2.8V3h3.1Z"/>
+              </svg>
+            </span>
             <strong>TikTok</strong>
           </a>
           <a class="social-card" href="https://www.twitch.tv/Shamytv" aria-label="Twitch de Shamy">
-            <span class="social-icon">TW</span>
+            <span class="social-icon social-icon-twitch" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4.3 2h15.4v10.6l-4.4 4.4H12l-2.2 2.2H7.6V17H4.3V2Zm2.2 2v11h3.3v2.2L12 15h3.3l2.2-2.2V4h-11Zm5.5 3h1.7v5H12V7Zm4.1 0h1.7v5h-1.7V7Z"/>
+              </svg>
+            </span>
             <strong>Twitch</strong>
           </a>
           <a class="social-card" href="https://open.spotify.com/search/Shamy%20N%20Where%20It%20All%20Begins" aria-label="Spotify de Shamy N">
-            <span class="social-icon">SP</span>
+            <span class="social-icon social-icon-spotify" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.6 14.4c-.2.3-.6.4-.9.2-2.5-1.5-5.7-1.8-9.4-1-.3.1-.7-.2-.8-.5-.1-.3.2-.7.5-.8 4.1-.9 7.6-.5 10.5 1.2.3.2.4.6.1.9Zm1.2-2.7c-.3.4-.8.5-1.2.3-2.8-1.7-7.1-2.2-10.5-1.2-.4.1-.9-.1-1-.6-.1-.4.1-.9.6-1 3.8-1.1 8.6-.6 11.8 1.4.4.2.5.7.3 1.1Zm.1-2.8C14.5 8.9 8.8 8.7 5.6 9.7c-.5.2-1-.1-1.2-.6-.2-.5.1-1 .6-1.2 3.7-1.1 10-.9 13.8 1.4.5.3.6.9.3 1.3-.2.4-.8.6-1.2.3Z"/>
+              </svg>
+            </span>
             <strong>Spotify</strong>
           </a>
         </div>
       </section>
 
-      <section class="section section-media">
-        <div class="section-heading">
-          <p class="eyebrow">À regarder</p>
-          <h2>Quelques extraits.</h2>
-        </div>
-        <div class="media-grid">
-          <article class="media-card media-card-large">
-            <span class="media-type">YouTube</span>
-            <h3>Extrait vidéo</h3>
-            <div class="video-frame">
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/VKzkAfLOxN0?rel=0"
-                title="Extrait vidéo de Shamy"
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <a class="media-fallback" href="https://www.youtube.com/watch?v=VKzkAfLOxN0">Ouvrir la vidéo si le lecteur bloque</a>
-          </article>
-          <article class="media-card">
-            <span class="media-type">Instagram</span>
-            <h3>Extrait stand-up</h3>
-            <blockquote
-              class="instagram-media"
-              data-instgrm-permalink="https://www.instagram.com/p/DWj_fCjkczj/"
-              data-instgrm-version="14"
-            >
-              <a href="https://www.instagram.com/p/DWj_fCjkczj/">Extrait stand-up de Shamy</a>
-            </blockquote>
-          </article>
-          <article class="media-card">
-            <span class="media-type">Musique</span>
-            <h3>Solo de guitare</h3>
-            <blockquote
-              class="instagram-media"
-              data-instgrm-permalink="https://www.instagram.com/p/ChflU3IAAlZ/"
-              data-instgrm-version="14"
-            >
-              <a href="https://www.instagram.com/p/ChflU3IAAlZ/">Solo de guitare de Shamy</a>
-            </blockquote>
-          </article>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">

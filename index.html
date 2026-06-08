@@ -8,13 +8,28 @@
       name="description"
       content="Site officiel de Shamy. Stand-up, musique, spectacles et demandes professionnelles."
     >
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shamy">
+    <meta property="og:title" content="Shamy | Humour, musique et scène">
+    <meta
+      property="og:description"
+      content="Stand-up, musique, spectacles, collaborations et demandes professionnelles."
+    >
+    <meta property="og:image" content="https://shhamy.github.io/Shamy---Site/assets/shamy-og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shamy | Humour, musique et scène">
+    <meta
+      name="twitter:description"
+      content="Stand-up, musique, spectacles, collaborations et demandes professionnelles."
+    >
+    <meta name="twitter:image" content="https://shhamy.github.io/Shamy---Site/assets/shamy-og.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     >
-    <link rel="icon" type="image/png" href="assets/shamy-icon.png">
+    <link rel="icon" type="image/png" href="assets/shamy-favicon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -50,7 +65,7 @@
         </div>
 
         <div class="hero-media" aria-label="Affiche du spectacle Professionnel">
-          <img src="assets/shamy - hero 2.jpg" alt="Shamy sur scène avec un micro">
+          <img src="assets/shamy-stage-hero.jpg" alt="Shamy sur scène avec un micro">
           <div class="event-chip">
             <span>Stand-up / musique</span>
             <strong>Shamy</strong>
@@ -60,24 +75,17 @@
 
       <section id="bio" class="section section-bio">
         <div class="bio-copy">
-          <p class="eyebrow">Ce que j'aime faire</p>
-          <h2>Un micro, une guitare, une idée bizarre : ça commence souvent comme ça.</h2>
+          <p class="eyebrow">À propos</p>
+          <h2>Un artiste polyvalent, entre scène, musique et projets créatifs.</h2>
           <p>
-            Shamy aime créer des moments. Un set de stand-up, un morceau, une chronique, une voix,
-            une scène, une vidéo : si l'idée l'accroche et qu'il sent qu'il peut y mettre quelque chose
-            de personnel, il y va.
+            Shamy aime créer, peu importe le format : stand-up, musique, chroniques, voix, vidéo
+            ou projets qui demandent du jeu. Si l'idée l'accroche et qu'il sent qu'il peut y mettre
+            quelque chose de personnel, il y va.
           </p>
           <p>
-            Son univers est direct, vivant et un peu imprévisible. Il peut partir d'une observation très simple,
-            pousser l'absurde un peu trop loin, puis revenir avec une guitare comme si tout ça était prévu.
+            Son univers est direct, vivant et un peu imprévisible. Une observation simple peut devenir
+            un détour absurde, une idée de scène, un personnage ou un morceau.
           </p>
-        </div>
-        <div class="bio-stats" aria-label="Univers de Shamy">
-          <span>Stand-up</span>
-          <span>Musique</span>
-          <span>Chronique</span>
-          <span>Cinéma</span>
-          <span>Voice acting</span>
         </div>
       </section>
 
@@ -109,7 +117,7 @@
       <section id="spectacles" class="section section-events">
         <div class="section-heading">
           <p class="eyebrow">Me voir en spectacle</p>
-          <h2>Prochaine grosse date</h2>
+          <h2>À l'affiche</h2>
         </div>
 
         <div class="event-feature">
@@ -140,6 +148,10 @@
             <a class="button button-primary" href="https://lepointdevente.com/billets/broufissionnel?lang=fr">
               Acheter des billets
             </a>
+            <p class="event-note">
+              Les prochaines dates seront ajoutées ici au fur et à mesure. Instagram reste le réflexe rapide
+              pour les annonces de dernière minute.
+            </p>
           </div>
         </div>
 
@@ -189,19 +201,26 @@
           </article>
           <article class="media-card">
             <span class="media-type">Musique</span>
-            <h3>Solo de guitare</h3>
+            <h3>Extrait de l'album</h3>
             <blockquote
               class="instagram-media"
               data-instgrm-permalink="https://www.instagram.com/p/ChflU3IAAlZ/"
               data-instgrm-version="14"
             >
-              <a href="https://www.instagram.com/p/ChflU3IAAlZ/">Solo de guitare de Shamy</a>
+              <a href="https://www.instagram.com/p/ChflU3IAAlZ/">Extrait de l'album de Shamy</a>
             </blockquote>
           </article>
-          <a class="media-card" href="https://open.spotify.com/search/Shamy%20N%20Where%20It%20All%20Begins">
-            <span class="media-type">Spotify</span>
-            <h3>Where It All Begins</h3>
-            <p>L'album de Shamy N, pour le côté musique de l'univers.</p>
+          <a class="media-card album-card" href="https://open.spotify.com/search/Shamy%20N%20Where%20It%20All%20Begins">
+            <div class="album-card-copy">
+              <span class="media-type">Spotify</span>
+              <h3>Where It All Begins</h3>
+              <p>L'album de Shamy N.</p>
+            </div>
+            <img
+              class="album-cover"
+              src="assets/album-where-it-all-begins-web.jpg"
+              alt="Pochette de l'album Where It All Begins de Shamy N"
+            >
           </a>
         </div>
         <a class="button button-primary media-page-link" href="medias.html">Voir tous les liens</a>
@@ -211,6 +230,10 @@
         <div>
           <p class="eyebrow">Infolettre</p>
           <h2>Pour recevoir les prochaines dates, sorties et nouvelles.</h2>
+          <p class="section-intro">
+            Un courriel de temps en temps pour les spectacles, les sorties et les projets importants.
+            Pas de bruit inutile.
+          </p>
         </div>
         <div class="contact-panel">
           <form

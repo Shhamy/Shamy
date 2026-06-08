@@ -54,7 +54,7 @@ document.querySelectorAll(".booking-form, .newsletter-form").forEach((form) => {
 });
 
 const animatedElements = document.querySelectorAll(
-  ".section-heading, .event-feature, .secondary-events article, .bio-copy, .bio-stats span, .pro-grid article, .media-card, .contact-panel, .social-card, .proof-layout"
+  ".section-heading, .event-feature, .secondary-events article, .bio-copy, .pro-grid article, .media-card, .contact-panel, .social-card, .proof-layout, .proof-points article, .kit-layout, .media-hero-photo"
 );
 
 animatedElements.forEach((element) => {
